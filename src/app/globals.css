@@ -39,69 +39,69 @@ body {
     minmax(0, 100px) [variants-end];
 }
 /*********************************************** NAVIGATION ***********************************************/
-.header-nav {
-  grid-column: full-start / full-end; /* fylder hele bredden */
+/* .header-nav {
+  grid-column: full-start / full-end; 
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.nav ul {
+/* .nav ul {
   display: flex;
   list-style: none;
   gap: 40px;
   font-size: 1.25rem;
-}
+} */
 
-.nav-icons {
+/* .nav-icons {
   display: flex;
   gap: 20px;
-}
+} */
 
 /********************************************************* HERO ***********************************************/
-.heading-text-content {
-  grid-column: full-start / content-mid; /* fra content-start til content-mid */
-  grid-row: hero-start / hero-end; /* fylder hele højden af hero */
+/* .heading-text-content {
+  grid-column: full-start / content-mid;
+  grid-row: hero-start / hero-end; 
   display: flex;
   margin-top: 60px;
   gap: 20px;
-}
+} */
 
-.heading {
+/* .heading {
   font-size: 4.2rem;
   font-weight: 700;
-}
+} */
 
-.text {
+/* .text {
   font-size: 4.2rem;
   font-weight: lighter;
-}
+} */
 
-.iWatch-img {
-  grid-column: content-mid / content-end; /* billedet fylder midten */
-  grid-row: hero-start / hero-end; /* fylder hele højden af hero */
+/* .iWatch-img {
+  grid-column: content-mid / content-end;
+  grid-row: hero-start / hero-end;
   display: flex;
   justify-content: center;
-}
+} */
 
-.btn {
+/* .btn {
   grid-column: full-start / content-mid;
 
   .buy-btn {
     border: solid 2px var(--foreground);
     background-color: transparent;
     padding: 20px 80px;
-    border-top-left-radius: 50px; /* øverste venstre hjørne */
-    border-bottom-left-radius: 50px; /* nederste venstre hjørne */
-    border-top-right-radius: 50px; /* øverste højre hjørne */
-    border-bottom-right-radius: 50px; /* nederste højre hjørne */
+    border-top-left-radius: 50px; 
+    border-bottom-left-radius: 50px; 
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px; 
     font-size: 1.25rem;
     cursor: pointer;
   }
-}
+} */
 
-.variants {
+/* .variants {
   list-style: none;
   display: flex;
   gap: 40px;
@@ -110,27 +110,27 @@ body {
 
 .variant-item {
   position: relative;
-  width: 80px; /* fast bredde */
-  height: 80px; /* fast højde */
+  width: 80px; 
+  height: 80px; 
   border-radius: 12px;
 }
 
 .bg-box {
   position: absolute;
   top: 30;
-  width: 100px; /* fylder hele li */
+  width: 100px;
   height: 60px;
   border-radius: 12px;
-  z-index: 0; /* ligger bag billedet */
+  z-index: 0; 
 }
 
 .variant-item img {
   position: relative;
   z-index: 1;
   display: block;
-  margin: auto; /* centrerer billedet i boksen */
-  top: 5px; /* eller fjern denne, så centreres perfekt */
-}
+  margin: auto; 
+  top: 5px; 
+} */
 
 .color-picker {
   display: flex;

@@ -13,17 +13,20 @@ import IwatchVariants from "./components/IwatchVariants";
 import ColorPick from "./components/ColorPick";
 
 export default function Home() {
+  // State til at holde styr på det aktive billede
+  // Vi starter med mint som default billede
+  // det der sker er at når man klikker på en variant, så opdateres state med det nye billede, og det nye billede vises i WatchImage komponenten
   const [activeWatchImg, setActiveWatchImg] = useState("/mint.png");
   return (
     <>
-      <header className="header-nav">
+      <header className="col-[full-start/full-end] flex items-center justify-between">
         <div>
           <FaApple size={50} />
         </div>
-        <div className="nav">
+        <div>
           <Header />
         </div>
-        <div className="nav-icons">
+        <div className="flex list-none gap-10 text-xl">
           <div>
             <CiSearch size={30} />
           </div>
@@ -32,22 +35,24 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <div className="heading-text-content">
+      <div className="col-[full-start/content-mid] row-[hero-start/hero-end] mt-15 flex gap-5">
         <div>
-          <Heading className="heading" />
-          <Text className="text" />
+          <Heading />
+          <Text />
         </div>
       </div>
-      <div className="iWatch-img">
+      <div className="col-[content-mid/content-end] row-[hero-start/hero-end] flex justify-center">
         <div>
-          <WatchImage img={activeWatchImg} />
+          <WatchImage img={activeWatchImg} />{" "}
+          {/* Vi sender det aktive billede som prop til WatchImage komponenten */}
         </div>
       </div>
-      <div className="btn">
-        <Button className="buy-btn" />
+      <div className="col-[full-start/content-mid]">
+        <Button />
       </div>
-      <IwatchVariants setActiveWatchImg={setActiveWatchImg} />
-      <ColorPick />
+      <IwatchVariants setActiveWatchImg={setActiveWatchImg} />{" "}
+      {/* Vi sender setActiveWatchImg funktionen som prop til IwatchVariants komponenten, så den kan opdatere det aktive billede*/}
+      <ColorPick setActiveWatchImg={setActiveWatchImg} />
     </>
   );
 }
